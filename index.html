@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        
+        <title>Quiz</title>
+        <meta name="description" content="" />
+        <meta name="author" content="Fabrice" />
+        
+    </head>
+    <body>
+        <div id="quiz-container">
+            
+        </div>
+        <!-- Templates -->
+        <script type="text/template" id="tpl-question">
+            <%= text %>
+        </script>
+        <script type="text/template" id="tpl-answer">
+            <input type="radio" name="text" value="<%= id %>" /><%= text %>
+        </script>
+        <script src="assets/js/app/utils.js" type="text/javascript" charset="utf-8"></script>
+        
+        <form action="#">
+            <input type="submit" value="next" class="submit-quiz"/>
+        </form>
+        
+        <script src="assets/js/lib/jquery-v1.9.0.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/lib/underscore-min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/lib/backbone-min.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script src="assets/js/app/router/router.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/app/models/question.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/app/models/answer.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/app/views/question.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/app/views/answer.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/app/views/answerList.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/app/collections/answer.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/app/main.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+</html>
